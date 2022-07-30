@@ -83,5 +83,4 @@ class WanController extends Controller
         return ($price_1h * $count * $time);
     }
 
-
 }
