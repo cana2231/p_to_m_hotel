@@ -8,6 +8,8 @@
 
 // TOP
 Route::get('/', 'TopController@index');
+// ログインページ
+Route::get('/login', 'LoginController@index');
 // 予約ページ
 Route::get('/reservation', 'ReservationController@index');
 // 予約確定
