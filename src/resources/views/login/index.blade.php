@@ -1,64 +1,19 @@
-<body id="particles-js"></body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="{{ asset('js/login/index.js') }}"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-<link rel="stylesheet" type="text/css" href="css/login/index.css">
-<!-- Mixins-->
-<!-- Pen Title-->
-<div class="pen-title">
-    <h1>P To M's Hotel</h1><span>powered <i class='fa fa-code'></i> by <a href='https://github.com/cana2231'>CanaT</a></span>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="{{ asset('js/register/index.js') }}"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="css/register/index.css">
+<form name="login_form" action="/login" method="post">
+  @csrf
+  <div class="login_form_top">
+    <h1>ログイン</h1>
+    <p>メールアドレス及びパスワードをご入力の上
+      <br>「login」ボタンをクリックしてください。</p>
   </div>
-  <div class="rerun"><a href="/">Topへ戻る</a></div>
-  <div class="container">
-    <div class="card"></div>
-    <div class="card">
-      <form>
-        <div class="input-container">
-          <input type="#{type}" id="#{label}" required="required"/>
-          <label for="#{label}">メールアドレス</label>
-          <div class="bar"></div>
-        </div>
-        <div class="input-container">
-          <input type="#{type}" id="#{label}" required="required"/>
-          <label for="#{label}">パスワード</label>
-          <div class="bar"></div>
-        </div>
-        <div class="button-container">
-          <button><span>ログイン</span></button>
-        </div>
-        <div class="footer"><a href="#">パスワードをお忘れの方</a></div>
-      </form>
-    </div>
-    <div class="card alt">
-      <div class="toggle"><i class="bi bi-pencil-fill"></i></div>
-      <h1 class="title">会員登録
-        <div class="close"></div>
-      </h1>
-      <form>
-        <div class="input-container">
-            <input type="#{type}" id="#{label}" required="required"/>
-            <label for="#{label}">お名前</label>
-            <div class="bar"></div>
-        </div>
-        <div class="input-container">
-          <input type="#{type}" id="#{label}" required="required"/>
-          <label for="#{label}">メールアドレス</label>
-          <div class="bar"></div>
-        </div>
-        <div class="input-container">
-          <input type="password" id="#{label}" required="required"/>
-          <label for="#{label}">パスワード</label>
-          <div class="bar"></div>
-        </div>
-        <div class="input-container">
-          <input type="password" id="#{label}" required="required"/>
-          <label for="#{label}">パスワード再確認</label>
-          <div class="bar"></div>
-        </div>
-        <div class="button-container">
-          <button><span>登録</span></button>
-        </div>
-      </form>
-    </div>
+  <div class="login_form_btm">
+    <input type="email"    maxlength="50" class="user_e-mail" name="user_e-mail" placeholder="メールアドレス">
+    <input type="password" maxlength="50" class="password" name="password" placeholder="パスワード">
+    <div class="info">パスワードをお忘れの方はこちら</div>
+    <input type="submit"   name="botton" value="login">
   </div>
+</form>
