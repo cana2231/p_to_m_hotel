@@ -17,6 +17,8 @@ Route::post('/reservation/cancel/', 'ReservationController@cancel');
 // 部屋紹介ページ
 Route::get('/room', 'RoomController@index');
 // 会員登録ページ
-Route::get('/register', 'registerController@index');
+Route::get('/register', 'RegisterController@index');
+Route::post('/register', 'RegisterController@regist');
+
 // 退会ページ
 Route::get('/register/delete', 'registerController@delete');

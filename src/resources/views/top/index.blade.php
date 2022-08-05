@@ -90,8 +90,9 @@
                     <a href="https://laracasts.com">ご予約はこちらから</a>
                     <a href="https://laravel-news.com">ご予約中の情報</a>
                     <a href="https://blog.laravel.com">マイページ</a>
-                    <a href="https://nova.laravel.com">ポリシーについて</a>
-                    <a href="https://forge.laravel.com">ルーム紹介</a>
+                    <a href="/login">会員ログイン</a>
+                    <a href="/register">会員登録</a>
+                    <a href="/room">ルーム紹介</a>
                     <a target="blank" href="https://twitter.com/oxo_cana_xoxo_t">Twitter</a>
                 </div>
             </div>
