@@ -83,7 +83,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    P to M's Hotel 🏠
+                    P to M's HOTEL 🏠
                 </div>
 
                 <div class="links">
