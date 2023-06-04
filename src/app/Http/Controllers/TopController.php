@@ -12,7 +12,6 @@ class TopController extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     function index (){
-        var_dump('a');
         return view('top/index');
     }
 

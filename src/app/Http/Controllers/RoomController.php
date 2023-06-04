@@ -12,8 +12,6 @@ class RoomController extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index (){
-        var_dump('tsuyoshi morita');
-        exit;
         return view('room/index');
     }
 
