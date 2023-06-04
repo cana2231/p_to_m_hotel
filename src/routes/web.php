@@ -22,6 +22,7 @@ Route::get('/room', 'RoomController@index');
 // 会員登録ページ
 Route::get('/register', 'RegisterController@index');
 Route::post('/register', 'RegisterController@regist');
-
+// ログインページ
+Route::get('/login', 'LoginController@index');
 // 退会ページ
 Route::get('/register/delete', 'registerController@delete');

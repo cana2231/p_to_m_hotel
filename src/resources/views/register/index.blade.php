@@ -3,7 +3,7 @@
 <script src="{{ asset('js/register/index.js') }}"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="css/register/index.css">
-<form name="login_form" action="/register" method="post">
+<form name="login_form" action="/regist" method="post">
   @csrf
   <div class="login_form_top">
     <h1>アカウント作成</h1>

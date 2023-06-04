@@ -1,19 +1,33 @@
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="{{ asset('js/register/index.js') }}"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-<link rel="stylesheet" type="text/css" href="css/register/index.css">
-<form name="login_form" action="/login" method="post">
-  @csrf
-  <div class="login_form_top">
-    <h1>ログイン</h1>
-    <p>メールアドレス及びパスワードをご入力の上
-      <br>「login」ボタンをクリックしてください。</p>
-  </div>
-  <div class="login_form_btm">
-    <input type="email"    maxlength="50" class="user_e-mail" name="user_e-mail" placeholder="メールアドレス">
-    <input type="password" maxlength="50" class="password" name="password" placeholder="パスワード">
-    <div class="info">パスワードをお忘れの方はこちら</div>
-    <input type="submit"   name="botton" value="login">
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>P to M's Hotelログイン</title>
+    <link rel="stylesheet" type="text/css" href="css/login/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <form action="">
+          <h2>会員ログイン</h2>
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input type="text" placeholder="メールアドレス" />
+          </div>
+          <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input type="password" placeholder="パスワード" />
+          </div>
+          <button type="submit">ログイン</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
