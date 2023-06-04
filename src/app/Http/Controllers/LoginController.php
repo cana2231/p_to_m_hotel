@@ -45,4 +45,5 @@ class LoginController extends BaseController
     //     //TODO ログインをしてTOPへ遷移させる
     // }
 
+
 }
