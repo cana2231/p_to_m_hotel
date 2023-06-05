@@ -20,9 +20,8 @@ class RegisterController extends BaseController
 
     public function regist(Request $request)
     {
-
-        // var_dump($request);
-        // exit;
+        var_dump($request->input());
+        exit;
 
 
         $request->validate([
@@ -42,7 +41,7 @@ class RegisterController extends BaseController
         $user->save();
 
         return response()->json(['message' => 'ユーザー登録が完了しました。'], 201);
-        //TODO ログインをしてTOPへ遷移させる
+        TODO ログインをしてTOPへ遷移させる
     }
 
 }
